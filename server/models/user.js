@@ -52,7 +52,7 @@ UserSchema.methods.generateAuthToken = function(){
         return token;
     });
 };
-
+//delete tokens
 UserSchema.methods.removeToken = function(token){
     var user = this;
     return user.update({
